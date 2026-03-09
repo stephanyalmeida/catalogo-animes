@@ -1,73 +1,36 @@
-# React + TypeScript + Vite
+# 🌸 Catálogo de Animes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma Single Page Application (SPA) desenvolvida em React para buscar, explorar e organizar animes. O projeto consome a Jikan API (MyAnimeList) para listar os animes em alta, realizar buscas detalhadas e permite gerenciar listas pessoais salvando os dados no navegador.
 
-Currently, two official plugins are available:
+🚀 **[Acesse o projeto rodando ao vivo aqui](COLOQUE_SEU_LINK_DO_VERCEL_AQUI)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Exploração:** Exibe automaticamente os animes em alta da temporada na página inicial.
+- **Busca Avançada:** Permite pesquisar qualquer anime presente no banco de dados do MyAnimeList.
+- **Página de Detalhes:** Roteamento dinâmico mostrando sinopse, nota e número de episódios.
+- **Tradução em Tempo Real:** Integração com a API do Google Tradutor para traduzir automaticamente a sinopse dos animes do inglês para o português.
+- **Gerenciamento de Listas:** Sistema de marcação em três categorias (❤️ Favoritos, ✅ Assistidos, ⏳ Quero Ver).
+- **Persistência de Dados:** As listas pessoais são salvas no `localStorage`, garantindo que os dados não sejam perdidos ao fechar o navegador.
+- **Organização:** Página dedicada para visualização das listas pessoais organizadas em abas e ordenadas alfabeticamente.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** (Hooks: `useState`, `useEffect`, Custom Hooks)
+- **TypeScript** (Tipagem rigorosa de dados da API)
+- **Vite** (Ferramenta de build super rápida)
+- **React Router DOM** (Navegação entre páginas e roteamento dinâmico)
+- **CSS3** (Flexbox, CSS Modules)
+- **Jikan API v4** (REST API)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Como rodar o projeto na sua máquina
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone este repositório:
+```bash
+git clone [https://github.com/SEU_USUARIO/catalogo-animes.git](https://github.com/SEU_USUARIO/catalogo-animes.git)
