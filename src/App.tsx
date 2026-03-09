@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AnimeDetails } from './pages/AnimeDetails';
 import './App.css';
-import { Home } from './pages/home';
 import { MyLists } from './pages/MyLists';
+import { Home } from './pages/Home';
 
 function App() {
   return (
