@@ -66,7 +66,7 @@ export function MyLists() {
         <div style={{ width: '150px' }}></div>
       </div>
 
-      <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginBottom: '40px' }}>
+      <div className="tabs-container" style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginBottom: '40px' }}>
         <button 
           style={tabStyle(abaAtiva === 'favoritos')} 
           onClick={() => setAbaAtiva('favoritos')}

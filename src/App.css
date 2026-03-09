@@ -44,9 +44,9 @@
 
 .anime-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
-  justify-content: center; 
+  padding: 20px 0;
 }
 
 .anime-card {
@@ -104,4 +104,61 @@
 
 .error-message {
   color: #ff4a4a;
+}
+
+.details-content {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  color: #333;
+}
+
+.details-image {
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .anime-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .anime-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .tabs-container {
+    flex-direction: column; 
+    padding: 0 10px;
+  }
+
+  .tabs-container button {
+    width: 100%; 
+    padding: 15px !important; 
+  }
+}
+
+@media (max-width: 768px) {
+  .details-content {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 15px;
+  }
+
+  .details-image {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .details-content div[style*="display: flex"] {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

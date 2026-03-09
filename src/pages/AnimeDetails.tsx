@@ -49,11 +49,11 @@ export function AnimeDetails() {
         ⬅ Voltar para a busca
       </Link>
       
-      <div style={{ display: 'flex', gap: '30px', marginTop: '30px', background: '#f9f9f9', padding: '20px', borderRadius: '12px', color: '#333' }}>
+      <div className="details-content">
         <img 
-          src={anime.images.jpg.large_image_url} 
-          alt={`Capa do anime ${anime.title}`} 
-          style={{ width: '300px', borderRadius: '8px', objectFit: 'cover' }}
+           className="details-image"
+           src={anime.images.jpg.large_image_url} 
+           alt={`Capa do anime ${anime.title}`} 
         />
         <div style={{ textAlign: 'left' }}>
           <h1 style={{ marginTop: '0' }}>{anime.title}</h1>
