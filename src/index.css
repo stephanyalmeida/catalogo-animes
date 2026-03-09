@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #242424; 
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
