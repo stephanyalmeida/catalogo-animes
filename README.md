@@ -2,7 +2,7 @@
 
 Uma Single Page Application (SPA) desenvolvida em React para buscar, explorar e organizar animes. O projeto consome a Jikan API (MyAnimeList) para listar os animes em alta, realizar buscas detalhadas e permite gerenciar listas pessoais salvando os dados no navegador.
 
-🚀 **[Acesse o projeto rodando ao vivo aqui](COLOQUE_SEU_LINK_DO_VERCEL_AQUI)**
+🚀 **[Acesse o projeto rodando ao vivo aqui](https://catalogo-animes-voro.vercel.app/)**
 
 ---
 
